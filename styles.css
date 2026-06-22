@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0a0a0a, #1a0033);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.main-title {
+    font-size: 3.8rem;
+    margin-bottom: 40px;
+    color: #c084fc;
+}
+
+.search-box {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    background: #1f1f1f;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+#search-input {
+    flex: 1;
+    padding: 18px 24px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+#search-btn {
+    padding: 0 40px;
+    background: #a855f7;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#search-btn:hover { background: #c084fc; }
+
+.results, .detail {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background: #1a1625;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 12px;
+    text-align: center;
+}
+
+.title { font-weight: bold; }
+.year { color: #c4b5fd; }
+
+.hidden { display: none !important; }

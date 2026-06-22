@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6b21a8">
+    <title>PoiskKino — Поиск фильмов и сериалов</title>
+    <meta name="description" content="Поиск и просмотр фильмов и сериалов онлайн">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div onclick="goHome()" class="logo-title">🎬 Поиск фильмов</div>
+    </header>
+
+    <div id="main-page" class="main-container">
+        <h1 class="main-title">Поиск фильмов</h1>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Введите название фильма или сериала" autocomplete="off">
+            <button id="search-btn">Поиск</button>
+        </div>
+    </div>
+
+    <div id="results" class="results hidden">
+        <h2>Результаты поиска</h2>
+        <div id="results-grid" class="grid"></div>
+    </div>
+
+    <div id="detail" class="detail hidden"></div>
+
+    <footer>
+        <p>Все материалы взяты из открытых источников. Данный проект создан исключительно в образовательных целях.<br>
+        Администрация проекта не несёт ответственности за размещённый контент.<br>
+        Почта для связи: corporationofgoodandevil@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
