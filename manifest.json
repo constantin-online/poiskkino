@@ -1,0 +1,76 @@
+{
+  "id": "kino-search-app",
+  "name": "Поиск Кино",
+  "short_name": "КиноПоиск",
+  "description": "Быстрый поиск фильмов и сериалов",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4285f4",
+  "orientation": "portrait",
+  "categories": [
+    "entertainment",
+    "video",
+    "media"
+  ],
+  "icons": [
+    {
+      "src": "favicons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Новинки",
+      "short_name": "Новинки",
+      "description": "Последние добавленные фильмы",
+      "url": "./index.html?sort=new",
+      "icons": [
+        {
+          "src": "favicons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Популярное",
+      "short_name": "Популярное",
+      "description": "Популярные фильмы",
+      "url": "./index.html?sort=popular",
+      "icons": [
+        {
+          "src": "favicons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Поиск",
+      "short_name": "Поиск",
+      "description": "Поиск фильма",
+      "url": "./index.html",
+      "icons": [
+        {
+          "src": "favicons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "name",
+      "text": "name"
+    }
+  }
+}

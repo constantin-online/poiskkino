@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нет интернета - Поиск Кино</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #202124;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Поддержка темной темы, если она была включена */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #e8eaed;
+            }
+        }
+
+        .offline-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 300px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            p { color: #9aa0a6; }
+        }
+
+        .retry-btn {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.2s, transform 0.1s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .retry-btn:hover {
+            background-color: #3367d6;
+        }
+
+        .retry-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-icon">📡</div>
+    <h1>Нет подключения к интернету</h1>
+    <p>Проверьте соединение с сетью и нажмите кнопку ниже, чтобы попробовать снова.</p>
+    
+    <button class="retry-btn" onclick="window.location.reload()">
+        <span>🔄</span> Обновить страницу
+    </button>
+</body>
+</html>
